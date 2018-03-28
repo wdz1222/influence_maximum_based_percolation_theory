@@ -18,7 +18,7 @@ class Other:
 
     def degree_centrality(self):
         dc = nx.degree_centrality(self.G)
-        print dc
+        print(dc)
         result = Other.sort_result(dc)
         result_path = '../other_data/%s_degree_centrality.txt' % self.G_name
         np.savetxt(result_path, result, fmt='%d')

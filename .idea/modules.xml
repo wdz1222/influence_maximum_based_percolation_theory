@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/influence.iml" filepath="$PROJECT_DIR$/.idea/influence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/influence_maximum_based_percolation_theory.iml" filepath="$PROJECT_DIR$/.idea/influence_maximum_based_percolation_theory.iml" />
     </modules>
   </component>
 </project>
