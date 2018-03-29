@@ -49,13 +49,14 @@ class CI:
                 if self.influence_index[i] == 1:
                     ci_index[i] = self.caculate_ci_index(i)
             maxci = np.argmax(ci_index)
+            print('ci_index=', np.max(ci_index))
             self.influence_index[maxci] = 0
             ci_index[maxci] = -1
             self.remove_influence_node(maxci)
             max_eigval_current = self.estimate_matrix_max_eigval()
             eig.append(max_eigval_current)
             index.append(maxci)
-            print(max_eigval_current)
+            print('max_eigval_current=', max_eigval_current)
         self.save_influencer(self.unite_order, eig, index)
 
     def remove_influence_node(self, i):
@@ -170,7 +171,8 @@ class CI:
 
 
 if __name__ == "__main__":
-    ci = CI('../graph_data/netscience_n1589_p2742.gpickle', 3)
+    # ci = CI('../graph_data/netscience_n1589_p2742.gpickle', 1)
+    ci = CI('../graph_data/er_graph_n50_p0.2.gpickle', 3)
     print('maxeigval=', ci.max_eigval)
     print('maxiniteig=', ci.max_init_eigval)
     print('threshold=', ci.influence_threshold)
