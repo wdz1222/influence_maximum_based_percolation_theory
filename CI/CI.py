@@ -171,8 +171,8 @@ class CI:
 
 
 if __name__ == "__main__":
-    # ci = CI('../graph_data/netscience_n1589_p2742.gpickle', 1)
-    ci = CI('../graph_data/er_graph_n50_p0.2.gpickle', 3)
+    # ci = CI('../graph_data/netscience_n1589_p2742.gpickle', 3)
+    ci = CI('../graph_data/er_graph_n50_p0.2.gpickle', 1)
     print('maxeigval=', ci.max_eigval)
     print('maxiniteig=', ci.max_init_eigval)
     print('threshold=', ci.influence_threshold)
